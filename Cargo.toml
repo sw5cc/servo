@@ -28,3 +28,15 @@ opt-level = 3
 #
 #     [patch."https://github.com/servo/<repository>"]
 #     <crate> = { path = "/path/to/local/checkout" }
+cgl = {git = "https://github.com/servo/cgl-rs", branch = "gleam"}
+gleam = {git = "https://github.com/servo/gleam", branch = "safety"}
+io-surface = {git = "https://github.com/servo/io-surface-rs", branch = "gleam"}
+offscreen_gl_context = {git = "https://github.com/nox/rust-offscreen-rendering-context", branch = "gleam"}
+servo-skia = {git = "https://github.com/servo/skia", branch = "gleam"}
+
+[patch."https://github.com/servo/rust-azure"]
+azure = {git = "https://github.com/servo/rust-azure.git", branch = "skia"}
+
+[patch."https://github.com/servo/webrender"]
+webrender = {git = "https://github.com/servo/webrender.git", branch = "gleam"}
+webrender_api = {git = "https://github.com/servo/webrender.git", branch = "gleam"}
